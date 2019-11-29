@@ -8,14 +8,14 @@ public class BuildAB1_1 : Editor
     {
         BuildTarget buildTarget = EditorUserBuildSettings.activeBuildTarget;
 
-        string outputPath = BuildABHelper.PrepareOutputFolder("Test1_1", buildTarget);
+        string outputPath = ABBuildHelper.PrepareOutputFolder("Test1_1", buildTarget);
 
         //清理所有的ABName
-        BuildABHelper.ClearAllABNames();
+        ABBuildHelper.ClearAllABNames();
 
         //设置新的ABName
-        BuildABHelper.SetABName("Assets/Test1/Prefabs/RawImageA.prefab", "RawImageA.ab", "");
-        BuildABHelper.SetABName("Assets/Test1/Prefabs/RawImageB.prefab", "RawImageB.ab", "");
+        ABBuildHelper.SetABName("Assets/Test1/Prefabs/RawImageA.prefab", "RawImageA.ab", "");
+        ABBuildHelper.SetABName("Assets/Test1/Prefabs/RawImageB.prefab", "RawImageB.ab", "");
 
         //开始构建
         AssetBundleManifest manifest = BuildPipeline.BuildAssetBundles(outputPath, BuildAssetBundleOptions.None, buildTarget);
@@ -28,15 +28,15 @@ public class BuildAB1_1 : Editor
     {
         BuildTarget buildTarget = EditorUserBuildSettings.activeBuildTarget;
 
-        string outputPath = BuildABHelper.PrepareOutputFolder("Test1_2", buildTarget);
+        string outputPath = ABBuildHelper.PrepareOutputFolder("Test1_2", buildTarget);
 
         //清理所有的ABName
-        BuildABHelper.ClearAllABNames();
+        ABBuildHelper.ClearAllABNames();
 
         //设置新的ABName
-        BuildABHelper.SetABName("Assets/Test1/Prefabs/RawImageA.prefab", "RawImageA.ab", "");
-        BuildABHelper.SetABName("Assets/Test1/Prefabs/RawImageB.prefab", "RawImageB.ab", "");
-        BuildABHelper.SetABName("Assets/Test1/Textures/TextureX.png", "TextureX.ab", "");
+        ABBuildHelper.SetABName("Assets/Test1/Prefabs/RawImageA.prefab", "RawImageA.ab", "");
+        ABBuildHelper.SetABName("Assets/Test1/Prefabs/RawImageB.prefab", "RawImageB.ab", "");
+        ABBuildHelper.SetABName("Assets/Test1/Textures/TextureX.png", "TextureX.ab", "");
 
         //开始构建
         AssetBundleManifest manifest = BuildPipeline.BuildAssetBundles(outputPath, BuildAssetBundleOptions.None, buildTarget);

@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.IO;
 
-static public class BuildABHelper
+static public class ABBuildHelper
 {
     static public void ClearAllABNames()
     {
