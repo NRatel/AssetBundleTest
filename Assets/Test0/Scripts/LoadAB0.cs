@@ -52,7 +52,7 @@ public class LoadAB0 : MonoBehaviour
         string assetName = "Sphere";                                  //可以，会采用 "Assets/test0/prefabs/Y/Sphere.prefab"
         //string assetName = "Assets/test0/prefabs/X/Sphere.png";       //不可以，在 ab.LoadAsset<GameObject> 处报错，因为类型不匹配
         //string assetName = "Assets/test0/prefabs/Y/Sphere.prefab";    //可以
-        //string assetName = "Assets/test0/prefabs/X/Sphere.prefab";    //可以
+        //string assetName = "Assets/test0/prefabs/Z/Sphere.prefab";    //可以
 
         string filePath = Application.streamingAssetsPath + "/AssetBundles/test0_2/Windows64/" + fileName;
 
