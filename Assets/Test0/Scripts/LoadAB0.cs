@@ -32,8 +32,8 @@ public class LoadAB0 : MonoBehaviour
 
         string filePath = Application.streamingAssetsPath + "/AssetBundles/test0_1/Windows64/" + fileName;
 
-        LoadABHelper.DownLoadAB(filePath, (AssetBundle ab) => {
-            LoadABHelper.DumpAllAssetNamesInThisAB(ab);
+        ABDownloader.DownLoadAB(filePath, (AssetBundle ab) => {
+            ABUtility.DumpAllAssetNamesInThisAB(ab);
 
             GameObject asset = ab.LoadAsset<GameObject>(assetName);
             GameObject go = Instantiate(asset);
@@ -57,8 +57,8 @@ public class LoadAB0 : MonoBehaviour
 
         string filePath = Application.streamingAssetsPath + "/AssetBundles/test0_2/Windows64/" + fileName;
 
-        LoadABHelper.DownLoadAB(filePath, (AssetBundle ab) => {
-            LoadABHelper.DumpAllAssetNamesInThisAB(ab);
+        ABDownloader.DownLoadAB(filePath, (AssetBundle ab) => {
+            ABUtility.DumpAllAssetNamesInThisAB(ab);
 
             GameObject asset = ab.LoadAsset<GameObject>(assetName);
             GameObject go = Instantiate(asset);

@@ -49,13 +49,4 @@ static public class BuildABHelper
                 return null;
         }
     }
-
-    static public void SaveFile(string savePath, string content)
-    {
-        FileStream fs = new FileStream(savePath, FileMode.OpenOrCreate, FileAccess.Write);//创建写入文件 
-        StreamWriter sw = new StreamWriter(fs);
-        sw.Write(content);
-        sw.Close();
-        fs.Close();
-    }
 }

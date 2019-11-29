@@ -19,8 +19,8 @@ public class LoadAB1 : MonoBehaviour
 
         string filePath = Application.streamingAssetsPath + "/AssetBundles/Test1_1/Windows64/" + fileName;
 
-        LoadABHelper.DownLoadAB(filePath, (AssetBundle ab) => {
-            LoadABHelper.DumpAllAssetNamesInThisAB(ab);
+        ABDownloader.DownLoadAB(filePath, (AssetBundle ab) => {
+            ABUtility.DumpAllAssetNamesInThisAB(ab);
 
             GameObject asset = ab.LoadAsset<GameObject>(assetName);
             GameObject go = Instantiate(asset);
@@ -37,8 +37,8 @@ public class LoadAB1 : MonoBehaviour
 
         string filePath = Application.streamingAssetsPath + "/AssetBundles/Test1_2/Windows64/" + fileName;
 
-        LoadABHelper.DownLoadAB(filePath, (AssetBundle ab) => {
-            LoadABHelper.DumpAllAssetNamesInThisAB(ab);
+        ABDownloader.DownLoadAB(filePath, (AssetBundle ab) => {
+            ABUtility.DumpAllAssetNamesInThisAB(ab);
 
             GameObject asset = ab.LoadAsset<GameObject>(assetName);
             GameObject go = Instantiate(asset);
@@ -59,8 +59,8 @@ public class LoadAB1 : MonoBehaviour
         string filePath = Application.streamingAssetsPath + "/AssetBundles/Test1_2/Windows64/" + fileName;
 
         //加载清单
-        LoadABHelper.DownLoadAB(manifestPath, (AssetBundle manifestAB) => {
-            LoadABHelper.DumpAllAssetNamesInThisAB(manifestAB);
+        ABDownloader.DownLoadAB(manifestPath, (AssetBundle manifestAB) => {
+            ABUtility.DumpAllAssetNamesInThisAB(manifestAB);
 
             //注意："AssetbundleManifest" 固定名称。即：清单ab文件中固定包含一个名为"AssetbundleManifest"的资源。
             AssetBundleManifest assetBundleManifest = manifestAB.LoadAsset<AssetBundleManifest>("AssetbundleManifest");
@@ -71,11 +71,11 @@ public class LoadAB1 : MonoBehaviour
             string[] dependentPaths = Array.ConvertAll<string, string>(dependentNames, (t) => { return Application.streamingAssetsPath + "/AssetBundles/Test1_2/Windows64/" + t; });
 
             //加载所有依赖
-            LoadABHelper.DownLoadABs(dependentPaths, (abs) => {
+            ABDownloader.DownLoadABs(dependentPaths, (abs) => {
                 //加载目标ab
-                LoadABHelper.DownLoadAB(filePath, (AssetBundle ab) =>
+                ABDownloader.DownLoadAB(filePath, (AssetBundle ab) =>
                 {
-                    LoadABHelper.DumpAllAssetNamesInThisAB(ab);
+                    ABUtility.DumpAllAssetNamesInThisAB(ab);
                     GameObject asset = ab.LoadAsset<GameObject>(assetName);
                     GameObject go = Instantiate(asset);
                     go.transform.SetParent(transform, false);

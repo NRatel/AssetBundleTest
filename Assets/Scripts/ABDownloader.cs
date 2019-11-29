@@ -5,13 +5,13 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class LoadABHelper : MonoBehaviour
+public class ABDownloader : MonoBehaviour
 {
-    static private LoadABHelper sm_Instance;
+    static private ABDownloader sm_Instance;
 
-    static LoadABHelper()
+    static ABDownloader()
     {
-        sm_Instance = new GameObject("#LoadABHelper#").AddComponent<LoadABHelper>();
+        sm_Instance = new GameObject("#ABDownloader#").AddComponent<ABDownloader>();
     }
 
     static public void DownLoadAB(string uri, Action<AssetBundle> onCompleted)
@@ -22,18 +22,6 @@ public class LoadABHelper : MonoBehaviour
     static public void DownLoadABs(string[] uris, Action<AssetBundle[]> onCompleted)
     {
         sm_Instance.StartCoroutine(DownLoadABsCoroutine(uris, onCompleted));
-    }
-
-    static public void DumpAllAssetNamesInThisAB(AssetBundle ab)
-    {
-        StringBuilder sb = new StringBuilder();
-        sb.Append(ab.name).Append(" ").Append("内含资源：");
-        string[] abNames = ab.GetAllAssetNames();
-        foreach (string name in abNames)
-        {
-            sb.Append(name).Append("; ");
-        }
-        Debug.Log(sb.ToString());
     }
 
     static private IEnumerator DownLoadABCoroutine(string uri, Action<AssetBundle> onCompleted)
