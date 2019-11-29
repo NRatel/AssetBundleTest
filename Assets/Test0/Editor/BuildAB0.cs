@@ -10,7 +10,7 @@ public class BuildAB0 : Editor
 
         string outputPath = BuildABHelper.PrepareOutputFolder("Test0_1", buildTarget);
 
-        //清理旧的ABName
+        //清理所有的ABName
         BuildABHelper.ClearAllABNames();
 
         //设置新的ABName
@@ -29,7 +29,7 @@ public class BuildAB0 : Editor
 
         string outputPath = BuildABHelper.PrepareOutputFolder("Test0_2", buildTarget);
 
-        //清理旧的ABName
+        //清理所有的ABName
         BuildABHelper.ClearAllABNames();
 
         //设置新的ABName

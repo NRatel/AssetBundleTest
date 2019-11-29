@@ -4,14 +4,14 @@ public class LoadAB0 : MonoBehaviour
 {
     void Start()
     {
-        //TestPath();
-        TestDuplicateNameAsset();
+        TestPath();
+        //TestDuplicateNameAsset();
     }
 
     //测试 文件名、资源名
     //结论：
     //  1、利用“UnityWebRequestAssetBundle.GetAssetBundle + www.SendWebRequest” 下载 AB 时，文件名后缀可有可无，且对大小写不敏感。
-    //  2、利用“ab.LoadAsset” 加载AB中的资源时，可使用全路径（从Assets开始、必须带后缀）,也可直接使用文件名（可带后缀也可不带），对大小写不敏感。
+    //  2、利用“ab.LoadAsset” 加载AB中的资源时，可使用全路径（必须从Assets开始、必须带后缀）,也可直接使用文件名（可带后缀也可不带），对大小写不敏感。
     private void TestPath()
     {
         //string fileName = "cube";             //可以
@@ -25,8 +25,9 @@ public class LoadAB0 : MonoBehaviour
         //string assetName = "Cube";            //可以
         //string assetName = "cUbE";            //可以
         //string assetName = "cube.prefab";     //可以
-        //string assetName = "assets/test0/prefabs/cube.prefab";    //可以
-        string assetName = "Assets/test0/prefabs/CUBE.prEFab";    //可以
+        string assetName = "assets/test0/prefabs/cube.prefab";    //可以
+        //string assetName = "Assets/test0/prefabs/CUBE.prEFab";    //可以
+        //string assetName = "test0/prefabs/cube.prefab";           //不行
         //string assetName = "assets/test0/prefabs/cube";           //不行
 
         string filePath = Application.streamingAssetsPath + "/AssetBundles/test0_1/Windows64/" + fileName;

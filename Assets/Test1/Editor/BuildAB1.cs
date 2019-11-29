@@ -4,13 +4,13 @@ using UnityEngine;
 public class BuildAB1_1 : Editor
 {
     [MenuItem("NRatel/BuildAB/Test1_1")]
-    static public void Build1()
+    static public void Build1_1()
     {
         BuildTarget buildTarget = EditorUserBuildSettings.activeBuildTarget;
 
         string outputPath = BuildABHelper.PrepareOutputFolder("Test1_1", buildTarget);
 
-        //清理旧的ABName
+        //清理所有的ABName
         BuildABHelper.ClearAllABNames();
 
         //设置新的ABName
@@ -24,13 +24,13 @@ public class BuildAB1_1 : Editor
     }
 
     [MenuItem("NRatel/BuildAB/Test1_2")]
-    static public void Build2()
+    static public void Build1_2()
     {
         BuildTarget buildTarget = EditorUserBuildSettings.activeBuildTarget;
 
         string outputPath = BuildABHelper.PrepareOutputFolder("Test1_2", buildTarget);
 
-        //清理旧的ABName
+        //清理所有的ABName
         BuildABHelper.ClearAllABNames();
 
         //设置新的ABName
