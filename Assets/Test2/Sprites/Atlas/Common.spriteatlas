@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Common
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 70f7f787facc1454e94321d097a060a0, type: 3}
+    totalSpriteSurfaceArea: 168584
+    bindAsDefault: 1
+    storedHash:
+      serializedVersion: 2
+      Hash: 32cc11e466c00c8ceccfc4bb62adbaf9
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 50f7d540047b4cd44b41e7e3f0799f21, type: 3}
+  - {fileID: 21300000, guid: 0cdfec807ceb5f74bbdb5ed2385704e7, type: 3}
+  - {fileID: 21300000, guid: 90dae2d196c21c84bb97c44f594c6c36, type: 3}
+  - {fileID: 21300000, guid: 837494529b060394fb98859ef79800d8, type: 3}
+  - {fileID: 21300000, guid: 88195d7361ae01649aa3ad7b02cccb20, type: 3}
+  - {fileID: 21300000, guid: 7cd34914e8f10994bbbde4c7869bf5d8, type: 3}
+  - {fileID: 21300000, guid: fb5c3164cfeaf164c851020a5c51b30c, type: 3}
+  - {fileID: 21300000, guid: 27a2f32522c057347af351b7afeffddf, type: 3}
+  - {fileID: 21300000, guid: 5adafc56d3374964a8c2655fd03fd992, type: 3}
+  - {fileID: 21300000, guid: 68cfd737df6e6b24da51db1344c37f0a, type: 3}
+  - {fileID: 21300000, guid: ecef4dd7c2568c14d932fff636f1e537, type: 3}
+  - {fileID: 21300000, guid: 1c9d7578a971a0848af099ca896fb7e1, type: 3}
+  - {fileID: 21300000, guid: 6aa6c43a911fd114499f454852a508be, type: 3}
+  - {fileID: 21300000, guid: 05b05eeac032e9e48b5acdb0f2339383, type: 3}
+  - {fileID: 21300000, guid: 0b21750b754b5144bbf112bebc4049d1, type: 3}
+  - {fileID: 21300000, guid: 2c4b664b314974f489b44534aa5ad8b3, type: 3}
+  - {fileID: 21300000, guid: 0da7154ee51cc0147a8da53bf7871c08, type: 3}
+  - {fileID: 21300000, guid: 9683c06ede5553540a60f4402cec33ec, type: 3}
+  - {fileID: 21300000, guid: af98fd7e528f9b946b4b24deec1ab56f, type: 3}
+  - {fileID: 21300000, guid: 446f28ff5bbc9204cb5c1704a62ea840, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - button_buttonbg_1
+  - button_buttonbg_3
+  - border_detail_apart
+  - bg_skill_skill_20
+  - icon_global_gift
+  - border_chain
+  - bg_activity_herobg
+  - icon_global_ore_picks
+  - icon_global_equipped
+  - bg_main_bg_f
+  - border_destiny_decorate
+  - button_buttonbg_2
+  - icon_global_miner_card
+  - button_buttonbg_5
+  - border_announcement_txtborder
+  - bg_ladder_numbg
+  - icon_global_wakeup
+  - border_decorate
+  - button_buttonbg_4
+  - bg_skill_skill_19
+  m_Tag: Common
+  m_IsVariant: 0
