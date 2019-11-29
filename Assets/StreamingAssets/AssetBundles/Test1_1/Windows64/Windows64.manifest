@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 4052686033
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: rawimagea.ab
+      Dependencies: {}
+    Info_1:
+      Name: rawimageb.ab
+      Dependencies: {}
