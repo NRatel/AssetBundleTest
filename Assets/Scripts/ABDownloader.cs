@@ -59,7 +59,7 @@ public class ABDownloader : MonoBehaviour
                 int index = Array.IndexOf(uris, uri);
                 assetBundles[index] = ab;
                 count--;
-                Debug.Log("uri: " + uri + ", index: " + index + ", count: " + count);
+                //Debug.Log("uri: " + uri + ", index: " + index + ", count: " + count);
             });
         }
         yield return new WaitUntil(() => { return count <= 0; });
