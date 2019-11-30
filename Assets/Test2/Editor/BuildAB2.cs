@@ -34,4 +34,5 @@ public class BuildAB2 : Editor
     }
 
     //一个图被多个图集引用？
+    //待细测
 }
