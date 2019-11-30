@@ -1,13 +1,15 @@
 ManifestFileVersion: 0
-CRC: 442897682
+CRC: 641738119
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: rawimagea.ab
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: texturex.ab
     Info_1:
       Name: rawimageb.ab
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: texturex.ab
     Info_2:
       Name: texturex.ab
       Dependencies: {}

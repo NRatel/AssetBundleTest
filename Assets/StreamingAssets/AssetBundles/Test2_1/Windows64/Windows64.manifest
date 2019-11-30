@@ -1,10 +1,10 @@
 ManifestFileVersion: 0
-CRC: 3032961510
+CRC: 3054953024
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: rawimagea.ab
+      Name: uinotpack.ab
       Dependencies: {}
     Info_1:
-      Name: rawimageb.ab
+      Name: uipacked.ab
       Dependencies: {}

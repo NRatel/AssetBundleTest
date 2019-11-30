@@ -44,10 +44,10 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4673a84e72af2ac45b2a0904ab3d0846, type: 3}
   - {fileID: 21300000, guid: 2b65788ee876afd4faa331298b68741f, type: 3}
   m_PackedSpriteNamesToIndex:
-  - mercenary_11000001
-  - mercenary_11000003
-  - mercenary_11000005
-  - mercenary_11000004
-  - mercenary_11000002
+  - hero_1
+  - hero_3
+  - hero_5
+  - hero_4
+  - hero_2
   m_Tag: Hero
   m_IsVariant: 0

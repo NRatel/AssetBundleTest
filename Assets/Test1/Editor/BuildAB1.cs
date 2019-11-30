@@ -1,7 +1,8 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-public class BuildAB1_1 : Editor
+//探究 AssetBundle打包 依赖问题
+public class BuildAB1 : Editor
 {
     // 关系：RawImageA.prefab 和 RawImageB.prefab 都依赖 TextureX.png。
     // 打包：分别打包 RawImageA.prefab 和 RawImageB.prefab。不单独打包 TextureX.png。
@@ -28,7 +29,8 @@ public class BuildAB1_1 : Editor
 
     // 关系：RawImageA.prefab 和 RawImageB.prefab 都依赖 TextureX.png。
     // 打包：分别打包 RawImageA.prefab 和 RawImageB.prefab。单独打包 TextureX.png。
-    // 结果：RawImageA.ab 和 RawImageB.ab 都依赖了 TextureX.ab，资源不冗余，但加载 RawImageA.ab 或 RawImageB.ab 前，必须保证TextureX.ab 已加载。
+    // 结果：RawImageA.ab 和 RawImageB.ab 都依赖了 TextureX.ab, 只有 TextureX.ab 中打入了 TextureX.png，资源不冗余，
+    //      但加载 RawImageA.ab 或 RawImageB.ab 前，必须保证TextureX.ab 已加载。
     [MenuItem("NRatel/BuildAB/Test1_2")]
     static public void Build1_2()
     {

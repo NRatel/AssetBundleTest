@@ -1,6 +1,8 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+//探究基本打包 和 资源加载路径
+//探究同名资源打包和加载
 public class BuildAB0 : Editor
 {
     [MenuItem("NRatel/BuildAB/Test0_1")]
