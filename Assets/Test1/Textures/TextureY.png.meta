@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a8e86a820afb3d24b88c4c5d40cd50e9
+guid: c148d1cad705a8f43bf43eeb9a1c4c2b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -87,5 +87,5 @@ TextureImporter:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 
-  assetBundleName: texturex.ab
+  assetBundleName: 
   assetBundleVariant: 
