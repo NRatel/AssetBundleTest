@@ -23,11 +23,20 @@ static public class ABBuildHelper
     }
 
     //准备输出目录
-    static public string PrepareOutputFolder(string testName, BuildTarget buildTarget)
+    static public string PrepareOutputFolder(string testName, BuildTarget buildTarget, bool clear = false)
     {
         string outputPath = Application.streamingAssetsPath + "/AssetBundles/" + testName + "/" + GetFolderByPlatform(buildTarget);
-        FileUtil.DeleteFileOrDirectory(outputPath);
-        Directory.CreateDirectory(outputPath);
+        
+        if (!Directory.Exists(outputPath))
+        {
+            Directory.CreateDirectory(outputPath);
+        }
+
+        if (clear)
+        {
+            FileUtil.DeleteFileOrDirectory(outputPath);
+        }
+        
         return outputPath;
     }
 

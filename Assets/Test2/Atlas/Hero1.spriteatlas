@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hero2
+  m_Name: Hero1
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -31,18 +31,15 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 2b65788ee876afd4faa331298b68741f, type: 3}
-    - {fileID: 2800000, guid: fc776a94cb84861439e29dd6baccb8b7, type: 3}
-    totalSpriteSurfaceArea: 2312
-    bindAsDefault: 0
+    totalSpriteSurfaceArea: 1156
+    bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: b878329d975333f95d9959339d2454f1
+      Hash: 2b2087e7dfa6e0dac9bda38c0aa82152
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: fc776a94cb84861439e29dd6baccb8b7, type: 3}
   - {fileID: 21300000, guid: 2b65788ee876afd4faa331298b68741f, type: 3}
   m_PackedSpriteNamesToIndex:
-  - hero_3
   - hero_2
-  m_Tag: Hero2
+  m_Tag: Hero1
   m_IsVariant: 0

@@ -1,15 +1,17 @@
 ManifestFileVersion: 0
-CRC: 2650776451
+CRC: 3689734324
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d5b8305172c44cfd0f3deb332c132c5a
+    Hash: 130931182680c5c7777d5d47a2f87299
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 783599d7cc3396c66a24adfe6656f577
+    Hash: 1ec9debb62b604058d3bc4dff419beb5
 HashAppended: 0
 ClassTypes:
 - Class: 1
+  Script: {instanceID: 0}
+- Class: 28
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -20,6 +22,8 @@ ClassTypes:
 - Class: 222
   Script: {instanceID: 0}
 - Class: 224
+  Script: {instanceID: 0}
+- Class: 687078895
   Script: {instanceID: 0}
 Assets:
 - Assets/Test2/Prefabs/UIPacked.prefab

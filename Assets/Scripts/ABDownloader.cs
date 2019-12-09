@@ -42,7 +42,8 @@ public class ABDownloader : MonoBehaviour
         {
             //不能多次加载重名的AssetBundle，否则会报错：
             //The AssetBundle 'XXX' can't be loaded because another AssetBundle with the same files is already loaded.
-            //意味着需要自己取维护列表，已加载过的不要重新加载
+            //这意味着需要自己取维护一个列表，保证已下载的不要下载
+            //或使用其他可缓存的 UnityWebRequestAssetBundle.GetAssetBundle 的其他重载？
             AssetBundle ab = DownloadHandlerAssetBundle.GetContent(www);
             onCompleted?.Invoke(ab);
         }
