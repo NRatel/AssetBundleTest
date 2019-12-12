@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 655767026}
   - component: {fileID: 655767027}
   m_Layer: 5
-  m_Name: LoadAB1
+  m_Name: LoadAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 655767025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24b442988bc843948925e37c960f3265, type: 3}
+  m_Script: {fileID: 11500000, guid: 52d2e0b06f94534478338b2b73f192ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &765767556
